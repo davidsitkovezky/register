@@ -1,0 +1,38 @@
+body{
+    background-color:black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+}
+button{
+    background-color:blue;
+    color:aqua;
+    width:fit-content;
+    display:flex;
+    justify-content:center;
+    border-radius: 10px;
+}
+p{
+    background-color:rgb(137, 137, 138);
+    color:white;
+    width:60px;
+    border-radius: 10px;
+    text-align: center;
+    border:0px;
+    margin:0px;
+    gap:10px;
+}
+button:hover{
+    background-color:lightblue;
+    color:lightcyan;
+}
+button:active{
+   background-color:darkblue;
+   color:darkcyan;
+   font-size:15px; 
+}
+br,p{
+    gap:10px;
+}
