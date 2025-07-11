@@ -1,0 +1,57 @@
+div {
+    background-color: aqua;
+    background: linear-gradient(350deg, aqua, aquamarine);
+    width: 370px;
+    align-content: center;
+    height: 400px;
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    right: 20%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px aquamarine;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+html {
+    background: linear-gradient(blue, aquamarine);
+    background-repeat: no-repeat;
+    height: 100%
+}
+
+.log_in {
+    display: flex;
+    justify-content: center;
+    color: lightblue;
+    background: linear-gradient(10deg, blue, darkblue);
+    width: 60px;
+    margin-left: 160px;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-shadow: 4px 4px 8px rgb(130, 161, 172);
+    box-shadow: 2px 2px 4px rgb(1, 1, 199);
+}
+
+#Password,
+#Username {
+    left: 100px;
+    position: absolute;
+    background:linear-gradient(aqua,aquamarine);
+    color:blue;
+    text-shadow:1px 1px 2px blue;
+    box-shadow:4px 4px 8px aqua;
+    border-radius:10px;
+}
+
+#checkbox {
+    position: absolute;
+    top: 128px;
+    right: 70px;
+    accent-color: aqua;
+}

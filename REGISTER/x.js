@@ -4,6 +4,11 @@ const submit = document.getElementById('submit')
 const p = document.getElementById('p')
 const checkbox = document.getElementById("checkbox")
 const checkbox2 = document.getElementById('checkbox2')
+const username = document.getElementById('name')
+const loginbutton = document.getElementById('login')
+const trueornot = passwordverify.value === password.value;
+const empty = password.value !== "";
+const empty2 = username.value !== "";
 checkbox.addEventListener('change', () => {
     if (checkbox.checked) {
         password.type = 'Text';
@@ -19,13 +24,16 @@ checkbox2.addEventListener('change', () => {
     };
 });
 submit.addEventListener('click', () => {
-    const trueornot =  passwordverify.value === password.value;
-    const empty = password.value !== " ";
-    if (trueornot && empty) {
+    if (password.value === passwordverify.value && password.value !== "" && username.value !== "") {
+        localStorage.setItem("password", password.value);
+        localStorage.setItem("username", username.value);
         password.value = "";
         passwordverify.value = "";
-        p.innerHTML = "sumbited!";
+        p.innerHTML = "submitted!";
+        username.value = "";
+        loginbutton.style.display = "block";
+        p.style.fontWeight = "bold";
     } else {
         p.innerHTML = "something went wrong, please check the password again";
-    }
-})
+    };
+});

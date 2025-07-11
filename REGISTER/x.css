@@ -1,66 +1,129 @@
-div{
-    background-color:aqua;
-    height:250px;
-    width:200px;
-    border-radius:10px;
+div {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    background: linear-gradient(aqua, aquamarine);
+    box-shadow: 4px 4px 8px aquamarine;
 }
-body{
-    justify-content: center;
-    align-items: center;
-    margin:0;
-    border:0;
-    display:flex;
-    height:800px;
-    font-size: 50px;
 
-}
-h3{
-    margin:0px;
-}
-input{
+body {
     justify-content: center;
     align-items: center;
-    display:flex;
-    flex-direction: row;
-    width: 140px;
-    margin:30px;
-    background-color:aquamarine;
-    border-radius:10px;
+    margin: 0;
+    border: 0;
+    display: flex;
+    height: 800px;
+    font-size: 50px;
+    background:linear-gradient(180deg ,blue,aquamarine);
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:920px;
 }
-h1{
-    height:10px;
-    margin:0px;
+
+h3 {
+    margin: 0px;
 }
-button{
-    display:flex;
+
+#name,
+#input1,
+#input2 {
+    justify-content: center;
     align-items: center;
-    justify-content:center;
-    margin:auto;
+    display: flex;
+    width: 140px;
+    margin: 30px;
+    border-radius: 10px;
+    background: linear-gradient(aquamarine, rgb(159, 252, 221));
+    text-shadow: 1px 1px 2px blue;
+    color: blue;
+}
+
+h1 {
+    height: 10px;
+    margin: 0px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    color: aqua;
+    background: linear-gradient(blue, darkblue);
+    text-shadow:2px 2px 4px rgb(89, 89, 255);
+    box-shadow: 2px 2px 4px rgb(89, 89, 255);
+}
+
+h3 {
+    background:linear-gradient(aqua,aquamarine);
+    border-radius: 10px;
+    display: flex;
+    top: 180px;
+    position: absolute;
+    color:rgb(116, 208, 211);
+    text-shadow:2px 2px 4px rgb(116, 208, 211);
+    box-shadow:4px 4px 8px aquamarine;
+}
+
+p {
+    font-size: 40px;
+}
+
+#checkbox {
+    position: absolute;
+    top: 427px;
+    right: 880px;
+    background-color: aquamarine;
+    accent-color: aqua;
+}
+
+#checkbox2 {
+    position: absolute;
+    top: 477px;
+    right: 880px;
+    background-color: aquamarine;
+    accent-color: aqua;
+}
+
+
+#login {
+    display: none;
+}
+
+button:hover {
+    transform: scale(1.10);
+        transition:
+        background-color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.9);
+        transition:
+        background-color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+}
+#p{
+    font-size: 20px;
+    position:absolute;
+    top:580px;
+    background:linear-gradient(aqua,aquamarine);
     border-radius:10px;
+    color:rgb(0, 216, 216);
+    text-shadow:2px 2px 4px rgb(147, 255, 219);
+    box-shadow:4px 4px 8px aquamarine;
 }
-h3{
-    background-color:aqua;
+#login{
+    font-size:30px;
+    position:absolute;
+    top:630px;
+    text-decoration: none;
+    background:linear-gradient(aqua, aquamarine);
+    color:rgb(107, 107, 255);
+    text-shadow: 2px 2px 4px aquamarine;
+    box-shadow: 4px 4px 8px aquamarine;
     border-radius:10px;
-    display:flex;
-    top:180px;
-    position:absolute;
-}
-p{
-    font-size:40px;
-}
-#checkbox{
-    position:absolute;
-    margin:0px;
-    border:0px;
-    top:370px;
-    left:760px;
-    width:10px;
-}
-#checkbox2{
-    position:absolute;
-    margin:0px;
-    border:0px;
-    top:420px;
-    left:760px;
-    width:10px;
 }
